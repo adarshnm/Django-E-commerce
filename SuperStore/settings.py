@@ -25,7 +25,8 @@ SECRET_KEY = '((+6fbq0j-hv3&wf#6&kczl5pbq99ed=%(w%*@zhvv8^!h99)8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.localhost', '127.0.0.1', '[::1]', '*',
+                 'django-e-commerce-dev.us-west-2.elasticbeanstalk.com']
 
 
 # Application definition
@@ -88,16 +89,16 @@ if 'RDS_DB_NAME' in os.environ:
     }
 else:
     DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'shops',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
-        'USER': 'root',
-        'PASSWORD': 'adarsh',
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'shops',
+            'HOST': '127.0.0.1',
+            'PORT': '3306',
+            'USER': 'root',
+            'PASSWORD': 'adarsh',
 
+        }
     }
-}
 
 
 # Password validation

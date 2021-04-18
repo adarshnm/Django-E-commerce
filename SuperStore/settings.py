@@ -26,7 +26,7 @@ SECRET_KEY = '((+6fbq0j-hv3&wf#6&kczl5pbq99ed=%(w%*@zhvv8^!h99)8'
 DEBUG = True
 
 ALLOWED_HOSTS = ['.localhost', '127.0.0.1', '[::1]', '*',
-                 'django-e-commerce-dev.us-west-2.elasticbeanstalk.com']
+                 'django-e-commerce-dev2.us-west-2.elasticbeanstalk.com']
 
 
 # Application definition
